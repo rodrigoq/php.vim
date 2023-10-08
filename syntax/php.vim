@@ -368,6 +368,8 @@ endif
 if index(g:php_syntax_extensions_enabled, "curl") >= 0 && index(g:php_syntax_extensions_disabled, "curl") < 0 && ( ! exists("b:php_syntax_extensions_enabled") || index(b:php_syntax_extensions_enabled, "curl") >= 0) && ( ! exists("b:php_syntax_extensions_disabled") || index(b:php_syntax_extensions_disabled, "curl") < 0)
 " curl functions
 syn keyword phpFunctions curl_close curl_copy_handle curl_errno curl_error curl_escape curl_exec curl_file_create curl_getinfo curl_init curl_multi_add_handle curl_multi_close curl_multi_errno curl_multi_exec curl_multi_getcontent curl_multi_info_read curl_multi_init curl_multi_remove_handle curl_multi_select curl_multi_setopt curl_multi_strerror curl_pause curl_reset curl_setopt curl_setopt_array curl_share_close curl_share_errno curl_share_init curl_share_setopt curl_share_strerror curl_strerror curl_unescape curl_version contained
+" ctype functions
+syn keyword phpFunctions ctype_alnum ctype_alpha ctype_cntrl ctype_digit ctype_graph ctype_lower ctype_print ctype_punct ctype_space ctype_upper ctype_xdigit contained
 " curl classes and interfaces
 syn keyword phpClasses CURLFile contained
 endif
