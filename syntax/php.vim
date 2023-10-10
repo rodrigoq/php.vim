@@ -463,6 +463,8 @@ if index(g:php_syntax_extensions_enabled, "phar") >= 0 && index(g:php_syntax_ext
 " Phar classes and interfaces
 syn keyword phpClasses Phar PharData PharException PharFileInfo contained
 endif
+" readline function
+syn keyword phpFunctions readline contained
 if index(g:php_syntax_extensions_enabled, "reflection") >= 0 && index(g:php_syntax_extensions_disabled, "reflection") < 0 && ( ! exists("b:php_syntax_extensions_enabled") || index(b:php_syntax_extensions_enabled, "reflection") >= 0) && ( ! exists("b:php_syntax_extensions_disabled") || index(b:php_syntax_extensions_disabled, "reflection") < 0)
 " Reflection classes and interfaces
 syn keyword phpClasses Reflection ReflectionClass ReflectionClassConstant ReflectionException ReflectionExtension ReflectionFunction ReflectionFunctionAbstract ReflectionGenerator ReflectionMethod ReflectionNamedType ReflectionObject ReflectionParameter ReflectionProperty ReflectionType ReflectionZendExtension Reflector contained
